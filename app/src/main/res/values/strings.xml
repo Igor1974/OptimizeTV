@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OptimizeTV</string>
+    <string name="app_title">OptimizeTV</string>
+    <string name="btn_clear_all_cache">Очистить кэш всех приложений</string>
+    <string name="btn_kill_background_processes">Завершить фоновые процессы</string>
+    <string name="btn_system_info">Показать информацию о системе</string>
+    <string name="btn_refresh_graphs">Обновить графики</string>
+    <string name="btn_reboot">Перезагрузить устройство</string>
+    <string name="btn_about">О программе</string>
+    <string name="btn_optimize_jobscheduler">Оптимизация Планировщика</string>
+    <string name="btn_disable_users">Блокировать создание пользователей</string>
+    <string name="btn_toggle_freezer">Включить заморозку кэшированных приложений</string>
+    <string name="btn_compile_apps">Компилировать приложения</string>
+    <string name="btn_optimize_network">Оптимизация сети</string>
+</resources>

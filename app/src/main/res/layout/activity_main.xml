@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E">
+
+    <!-- Основной контент -->
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Контейнер для графиков -->
+        <LinearLayout
+            android:id="@+id/chart_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:visibility="gone">
+
+            <!-- График температуры -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_cpu_temp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- График частоты -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_cpu_freq"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Кнопка обновления графиков -->
+            <Button
+                android:id="@+id/btn_refresh_graphs"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="@string/btn_refresh_graphs"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_blue_gradient"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+
+        <!-- Кнопка: Информация о системе -->
+        <Button
+            android:id="@+id/btn_system_info"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_system_info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Очистить кэш всех приложений -->
+        <Button
+            android:id="@+id/btn_clear_all_cache"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_clear_all_cache"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Завершить фоновые процессы -->
+        <Button
+            android:id="@+id/btn_kill_background_processes"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_kill_background_processes"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Оптимизация JobScheduler -->
+        <Button
+            android:id="@+id/btn_optimize_jobscheduler"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_optimize_jobscheduler"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Блокировать создание пользователей -->
+        <Button
+            android:id="@+id/btn_disable_users"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_disable_users"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Включить заморозку -->
+        <Button
+            android:id="@+id/btn_toggle_freezer"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_toggle_freezer"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Оптимизация сети -->
+        <Button
+            android:id="@+id/btn_optimize_network"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_optimize_network"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Компилировать приложения -->
+        <Button
+            android:id="@+id/btn_compile_apps"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_blue_gradient"
+            android:text="@string/btn_compile_apps"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- Кнопка: Перезагрузить устройство -->
+        <Button
+            android:id="@+id/btn_reboot"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_red_gradient"
+            android:text="@string/btn_reboot"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="#0f0"
+            android:visibility="gone" />
+
+        <!-- ScrollView только для логов -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#111111"
+                android:maxLines="50"
+                android:padding="8dp"
+                android:singleLine="false"
+                android:textColor="#0f0" />
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Кнопка 'О программе' поверх всего -->
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="end|top"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_green_gradient"
+        android:text="@string/btn_about"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"/>
+</FrameLayout>

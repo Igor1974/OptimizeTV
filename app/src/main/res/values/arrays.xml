@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="dns_servers">
+        <item>Google DNS (8.8.8.8)</item>
+        <item>Cloudflare DNS (1.1.1.1)</item>
+        <item>OpenDNS (208.67.222.222)</item>
+    </string-array>
+
+    <string-array name="dns_values">
+        <item>8.8.8.8</item>
+        <item>1.1.1.1</item>
+        <item>208.67.222.222</item>
+    </string-array>
+</resources>

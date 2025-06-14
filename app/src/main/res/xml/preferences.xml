@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="pref_disable_animations"
+        android:title="Отключить анимации"
+        android:summary="Ускорение интерфейса"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_optimize_jobscheduler"
+        android:title="Оптимизация планировщика"
+        android:summary="Ограничивает фоновые задачи"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_disable_background_services"
+        android:title="Отключить фоновые службы"
+        android:summary="Останавливает ненужные службы"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_reduce_wake_locks"
+        android:title="Снизить WakeLock"
+        android:summary="Уменьшает блокировки процессора"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_enable_freezer"
+        android:title="Включить заморозку фоновых приложений"
+        android:summary="Останавливает неактивные приложения для экономии ресурсов"
+        android:defaultValue="true" />
+        
+<PreferenceCategory android:title="Сетевые настройки">
+
+    <SwitchPreferenceCompat
+        android:key="pref_enable_tcp_fastopen"
+        android:title="Включить TCP Fast Open"
+        android:summary="Сокращает время подключения"/>
+
+    <ListPreference
+        android:key="pref_dns_server"
+        android:title="Выбор DNS"
+        android:entries="@array/dns_servers"
+        android:entryValues="@array/dns_values"
+        android:defaultValue="8.8.8.8"
+        android:dialogTitle="Выберите DNS сервер"/>
+
+    <SwitchPreferenceCompat
+        android:key="pref_disable_background_services"
+        android:title="Отключить фоновые службы"
+        android:summary="Bluetooth, Ethernet и др."/>
+</PreferenceCategory>        
+
+</PreferenceScreen>
