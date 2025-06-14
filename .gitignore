@@ -1,15 +1,67 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built files
+*.apk
+*.aar
+*.ap_
+app/release/
+app/build/
+build/
+captures/
+
+# Local config
 local.properties
+gradle.properties
+
+# Gradle
+.gradle/
+.gradle/
+!/app/build/
+
+# IDEs
+.idea/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+*.csv
+*.pid
+*.sublime-project
+*.sublime-workspace
+
+# User-specific
+~/.android/
+~/.AndroidStudio*/
+**/outputs/
+
+# Keystore
+*.jks
+*.keystore
+
+# Files for the dex VM
+*.dex
+
+# Lint
+lint-results-*.xml
+
+# Misc.
+*.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.orig
+*~
+\#*#
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Windows folder view config
+Desktop.ini
