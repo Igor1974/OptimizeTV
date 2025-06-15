@@ -29,3 +29,4 @@
 2. SELinux должен быть в режиме `permissive`:
    ```bash
    adb shell su -c "setenforce 0"
+screen.png
